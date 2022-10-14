@@ -11,6 +11,7 @@ public class RegExStack {
         this.regExStack = new NFA[stackSize];
     }
 
+    /*Typical push-pop methods */
     public void push(NFA data) {
         regExStack[top] = data;
         top++;
