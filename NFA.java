@@ -1,4 +1,3 @@
-package com.company;
 import java.util.ArrayList;
 
 public class NFA {
@@ -78,8 +77,8 @@ public class NFA {
     }
 
     public void print() {
-        System.out.println("Start State: q"+startState);
-        System.out.println("Accept State: q"+acceptState);
+        System.out.println("Start: q"+startState);
+        System.out.println("Accept: q"+acceptState);
         for(int i = 0; i < trns.size(); i++ ) {
             trns.get(i).print();
         }

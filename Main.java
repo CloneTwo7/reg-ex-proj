@@ -1,8 +1,22 @@
-package com.company;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String regex = "aa&"; int stateNum = 0;
+	String regex = ""; int stateNum = 0;
+	if(args.length < 1) {
+	    System.out.println("Please provide a valid file path");
+	    return;
+	}
+	try {
+	    File regFile = new File(args[0]);
+	    Scanner reader = new Scanner(regFile);
+	    regex = reader.nextLine();
+	} catch (FileNotFoundException e) {
+	    System.out.println("ERROR: "+args[0]+" file not found");
+	    e.printStackTrace();
+	}
         RegExStack stack = new RegExStack(regex.length());
         for(int i = 0; i < regex.length(); i++) {
             char symbol = regex.charAt(i);

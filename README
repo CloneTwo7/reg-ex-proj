@@ -1,1 +1,35 @@
-This is a readme.
+### README ###
+Name: Travis Peterson
+Date: 10/13/2022
+Email: travis.m.peterson@wsu.edu
+
+Files contained in the folder:
+-> Main.java
+   -> 	This file contains the code for handling interactions with the stack.
+-> RegExStack.java
+   -> 	This file contains code that handles a stack containing NFA state 
+	machine objects. It determines what happens when a pop, push, or 
+	print is called.
+-> NFA.java
+   -> 	This file contains code that determines how an NFA object should 
+	behave. It handles how transitions are added to an NFA, and has 
+	methods for concatination, union operations, and klene star operations.
+-> Transtions.java
+   -> 	This file contains code that determines how Transition objects are 
+	created and handled. It determines what states are contained in the 
+	transition, and what symbol is associated with said transition.
+
+Compiler: javac 18.0.2
+
+Compile Instructions: [I have never created a java README before so I apologize]
+-> Run the following command in the terminal as follows:
+
+	$javac Main.java NFA.java RegExStack.java Transitions.java
+
+-> That will compile the code such that you can run it.
+-> Tip: Technically the assignment clarified "Makefile is ***recommended***" 
+-> To run the code, follow the bellow execution method:
+
+	$java Main [filename/path]
+
+-> Be amazed

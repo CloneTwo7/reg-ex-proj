@@ -1,5 +1,3 @@
-package com.company;
-
 public class Transitions {
     int state_one;
     int state_two;
